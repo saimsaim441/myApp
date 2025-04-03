@@ -20,7 +20,6 @@ public class JpaConfig {
 		emf.setDataSource(dataSource);
 		emf.setJpaVendorAdapter(jpaVendorAdapter);
 		emf.setPackagesToScan("com.customer.registration.entity");
-		
 		return emf;
 	}
 

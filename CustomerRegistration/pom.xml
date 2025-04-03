@@ -15,7 +15,7 @@
 	<name>CustomerRegistration</name>
 	<description>Customer registration project for Spring Boot</description>
 	<url />
-	<licenses>
+	<licenses> 
 		<license />
 	</licenses>
 	<developers>

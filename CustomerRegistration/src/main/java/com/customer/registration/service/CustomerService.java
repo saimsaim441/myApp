@@ -24,7 +24,6 @@ public class CustomerService {
 	private CustomerRepository customerRepository;
 	@Autowired
     private JavaMailSender javaMailSender;
-
 	public Customer registerCustomer(Customer customer) {
 		// Check if email is unique
 		if (customerRepository.findByEmail(customer.getEmail()).isPresent()) {

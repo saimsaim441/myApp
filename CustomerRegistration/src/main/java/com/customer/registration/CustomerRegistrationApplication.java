@@ -9,9 +9,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 @ComponentScan(basePackages = "com.customer.registration")
 @EnableAsync
 public class CustomerRegistrationApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(CustomerRegistrationApplication.class, args);
 	}
-
 }

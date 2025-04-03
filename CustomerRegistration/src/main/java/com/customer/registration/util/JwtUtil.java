@@ -22,7 +22,6 @@ public class JwtUtil {
     private Key getSigningKey() {
         return Keys.hmacShaKeyFor(secretKey.getBytes());
     }
-
     public String generateToken(String username) {
         return Jwts.builder()
                 .setSubject(username)

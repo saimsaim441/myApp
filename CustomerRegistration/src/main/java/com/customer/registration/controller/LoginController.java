@@ -20,7 +20,6 @@ public class LoginController {
 
     @Autowired
     private LoginService loginService;
-
     @PostMapping("/login")
     public ResponseEntity<String> login(@RequestParam String email, @RequestParam String password) {
         try {

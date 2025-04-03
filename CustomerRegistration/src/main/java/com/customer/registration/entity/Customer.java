@@ -19,7 +19,6 @@ public class Customer {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
 	@NotBlank(message = "Email is required")
 	@Email(message = "Invalid email format")
 	@Column(unique = true,nullable = false)

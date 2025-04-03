@@ -18,7 +18,6 @@ public class LoginService {
 
     @Autowired
     private JwtUtil jwtUtil;
-
     public String login(String email, String password) {
         var user = customerRepository.findByEmail(email)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid email or password"));
